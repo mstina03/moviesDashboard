@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "concurrently \"npm run movies-backend\" \"npm run movies-frontend\"",
-  "movies-backend": "node movies-backend/index.js",
-  "movies-frontend": "npm --prefix movies-frontend start"
+    "start": "concurrently \"npm run movies-backend\" \"npm run movies-frontend\"",
+    "movies-backend": "node movies-backend/index.js",
+    "movies-frontend": "npm --prefix movies-frontend start"
   },
   "keywords": [],
   "author": "Tina Smith",
@@ -15,5 +15,8 @@
   "type": "commonjs",
   "devDependencies": {
     "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.7.1"
   }
 }
