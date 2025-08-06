@@ -1,19 +1,14 @@
-// movies-backend/index.js
-const express = require('express');
-const cors = require('cors');
+import express from 'express';
+import cors from 'cors';
+import users from './users.js';
+
 const app = express();
-const PORT = 5050;
-
-// Enable CORS and JSON parsing
-app.use(cors());
 app.use(express.json());
-
-// Test route
-app.get('/api/message', (req, res) => {
-    res.json({ message: 'Hello from the server!' });
+app.use(cors());
+app.use('/users', users);                // localhost:5050/users
+app.get('/', (req, res) => {             // localhost:5050
+    res.send('howdy')
 });
-
-// Start server
-app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
+app.listen(5050, () => {
+    console.log('listening at http://localhost:5050');
 });
