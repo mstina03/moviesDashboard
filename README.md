@@ -10,7 +10,7 @@ moviesdashboard/
 └── README.md   
 
 Frontend is on http://localhost:3000
-Backend is on http://localhost:5000
+Backend is on http://localhost:5050
 
 ###Run App
 npm start
