@@ -1,5 +1,6 @@
 {
   "name": "moviesdashboard",
+  "homepage": "https://mstina03.github.io/moviesDashboard",
   "version": "1.0.0",
   "description": "Movies Dashboard ",
   "main": "index.js",
