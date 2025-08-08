@@ -8,7 +8,7 @@ const Login = ({ uname, handleLogin, unameRef, pwordRef }) => {
 
     useEffect(() => {
         if (uname) {
-            console.log(`LOGIN: navigate( '/')`);
+            console.log(`LOGIN: navigate( '/dashboard')`);
             navigate("/dashboard");
         }
     }, [uname, navigate]);

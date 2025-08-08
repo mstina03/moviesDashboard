@@ -9,17 +9,21 @@ const Register = ({ handleRegister }) => {
     const navigate = useNavigate();
 
     const onSubmit = () => {
-        const uname = unameRef.current.value;
-        const pword = pwordRef.current.value;
-        const pword2 = pword2Ref.current.value;
+        const uname = unameRef.current.value.trim();
+        const pword = pwordRef.current.value.trim();
+        const pword2 = pword2Ref.current.value.trim();
+
 
         if (!uname || !pword || !pword2) {
             alert("All fields are required.");
             return;
+        } else if (pword !== pword2) {
+            alert("Passwords does not match.");
+            return;
+
         }
 
-        // Your actual register logic here
-        handleRegister(uname, pword, pword2);
+        handleRegister(uname, pword);
         navigate("/login"); // Redirect to login after registration
     };
 
@@ -32,7 +36,7 @@ const Register = ({ handleRegister }) => {
                     <input placeholder="Username" type="text" ref={unameRef} />
                 </div>
                 <div>
-                    <input placeholder= "Password" type="password" ref={pwordRef} />
+                    <input placeholder="Password" type="password" ref={pwordRef} />
                 </div>
                 <div>
                     <input placeholder="Repeat Password" type="password" ref={pword2Ref} />
