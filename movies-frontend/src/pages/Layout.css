@@ -1,5 +1,5 @@
 nav {
-    background-color: #333;
+    background-color: #c10b9c;
     padding: 10px 20px;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@ nav {
 }
 
 .nav-title {
-    color: white;
+    color: whitesmoke;
     font-size: 24px;
     font-weight: bold;
 }
