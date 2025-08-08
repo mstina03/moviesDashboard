@@ -63,12 +63,12 @@ export default function App() {
           alert('✅ User registered successfully');
         } else {
           console.error('⚠️ Registration failed:', data.message);
-          alert('⚠️ Registration failed: ' + data.message);
+          alert('⚠️ Registration failed.');
         }
       })
       .catch(err => {
         console.error('❌ Error during registration:', err);
-        alert('❌ Error during registration: ' + err.message);
+        alert('❌ Error during registration.');
       });
   };
 
