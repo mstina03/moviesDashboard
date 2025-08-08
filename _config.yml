@@ -1,5 +1,7 @@
 exclude:
   - node_modules
+  - movies-backend/node_modules
+  - movies-frontend/node_modules
   - Gemfile
   - Gemfile.lock
   - package-lock.json
