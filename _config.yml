@@ -1,0 +1,6 @@
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - README.md
