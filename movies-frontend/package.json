@@ -1,5 +1,6 @@
 {
   "name": "movies-frontend",
+  "homepage": "https://mstina03.github.io/moviesDashboard",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5050",
