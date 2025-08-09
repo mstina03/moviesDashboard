@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 const Logout = ({ uname, handleLogout }) => {
     const navigate = useNavigate();
+
     console.log(`LOGIN: uname=${uname}`)
+    
     useEffect(() => {
         if (!uname) {
             console.log(`LOGIN: navigate( '/login')`);
