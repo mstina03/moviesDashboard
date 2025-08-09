@@ -4,23 +4,23 @@ import { useNavigate } from "react-router-dom";
 const Logout = ({ uname, handleLogout }) => {
     const navigate = useNavigate();
 
-    console.log(`LOGOUT: uname=${uname}`)
-    
     useEffect(() => {
-        if (!uname) {
-            console.log(`LOGOUT: navigate( '/login')`);
-            navigate('/login'); // <-- redirect
-        }
-    }, [uname, navigate]);
+        console.log(`LOGOUT: uname=${uname}`);
+
+        handleLogout();
+
+        navigate('/login');
+
+    }, [handleLogout, navigate]); 
 
     return (
         <div className="login-container">
             <div className="login-content">
-                <h1>Logout</h1>
-                <h5>Click to logout, {uname}</h5>
-                <button onClick={handleLogout}>Logout</button>
+                <h1>Logging out...</h1>
+                <p>Goodbye, {uname}</p>
             </div>
         </div>
     );
 }
+
 export default Logout;

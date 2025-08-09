@@ -20,7 +20,7 @@ const Dashboard = ({ uname = "Username" }) => {
                 <h4 className="app-title">Movie Genres</h4>
                 <div className="user-info">
                     Welcome, {uname} &nbsp;
-                    <Link to="logout">Logout</Link>  
+                    <Link to="/logout">Logout</Link>  
                 </div>
             </header>
 
