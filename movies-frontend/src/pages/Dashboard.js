@@ -6,7 +6,7 @@ import './Dashboard.css';
 const Dashboard = ({ uname = "Username" }) => {
     const categories = ["Action", "Comedy", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Mystery", "Romance", "Science Fiction", "Western"];
 
-    // stores the  selected category
+    // stores the selected category
     const [selectedCategory, setSelectedCategory] = useState(null);
 
     const handleCategoryClick = (cat) => {
