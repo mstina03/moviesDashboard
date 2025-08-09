@@ -82,10 +82,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home uname={uname} />} />
-          <Route path="login" element={<Login uname={uname} unameRef={unameRef} pwordRef={pwordRef} handleLogin={handleLogin} />} />
+          <Route path="/login" element={<Login uname={uname} unameRef={unameRef} pwordRef={pwordRef} handleLogin={handleLogin} />} />
           <Route path="/logout" element={<Logout uname={uname} handleLogout={handleLogout} />} />
-          <Route path="register" element={<Register handleRegister={handleRegister} />} />
-          <Route path="dashboard" element={<Dashboard uname={uname} />} />
+          <Route path="/register" element={<Register handleRegister={handleRegister} />} />
+          <Route path="/dashboard" element={<Dashboard uname={uname} />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

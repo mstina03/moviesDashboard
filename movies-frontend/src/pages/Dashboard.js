@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import './Dashboard.css';
 
 const Dashboard = ({ uname = "Username" }) => {
     const categories = ["Action", "Comedy", "Documentary", "Drama", "Fantasy", "Horror", "Musical", "Mystery", "Romance", "Science Fiction", "Western"];
 
-    // store which category is selected
+    // stores the  selected category
     const [selectedCategory, setSelectedCategory] = useState(null);
 
     const handleCategoryClick = (cat) => {
@@ -18,7 +20,7 @@ const Dashboard = ({ uname = "Username" }) => {
                 <h4 className="app-title">Movie Genres</h4>
                 <div className="user-info">
                     Welcome, {uname} &nbsp;
-                    <a href="/logout">Logout</a>
+                    <Link to="logout">Logout</Link>  
                 </div>
             </header>
 
