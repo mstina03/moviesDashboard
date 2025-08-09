@@ -14,6 +14,7 @@ const Login = ({ uname, handleLogin, unameRef, pwordRef }) => {
     }, [uname, navigate]);
 
     return (
+        <form>
         <div className="login-container">
             <div className="login-content">
                 <h1>Login</h1>
@@ -22,12 +23,12 @@ const Login = ({ uname, handleLogin, unameRef, pwordRef }) => {
                 <div> <input placeholder='Password' type='password' ref={pwordRef} /></div>
                 <button onClick={handleLogin}>Login</button>
 
-                {/* Register link */}
                 <p style={{ marginTop: '10px' }}>
                     Don't have an account? <Link to="/register">Register here</Link>
                 </p>
             </div>
-        </div>
+            </div>
+        </form>
     );
 };
 

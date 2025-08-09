@@ -11,7 +11,7 @@ const Logout = ({ uname, handleLogout }) => {
 
         navigate('/login');
 
-    }, [handleLogout, navigate]); 
+    }, [uname, handleLogout, navigate]);
 
     return (
         <div className="login-container">

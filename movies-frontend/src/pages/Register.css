@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    
+
 }
 
 .register-content {
@@ -41,4 +41,15 @@
 
 .register-content button:hover {
     background-color: #555;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 4px;
+}
+
+.general-error {
+    margin-top: 10px;
+    font-weight: bold;
 }

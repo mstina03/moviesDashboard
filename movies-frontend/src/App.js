@@ -8,6 +8,7 @@ import Logout from "./pages/Logout";
 import NoPage from "./pages/NoPage";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
 
 export default function App() {
   const [uname, setUname] = useState(null);
@@ -59,7 +60,10 @@ export default function App() {
     })
       .then(res => res.json())
       .then(data => {
+        console.log("Server response:", data);
+
         if (data.userId) {
+          
           console.log('✅ User registered successfully:', data);
           alert('✅ User registered successfully');
         } else {
@@ -80,12 +84,13 @@ export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout uname={uname} />}>
           <Route index element={<Home uname={uname} />} />
           <Route path="/login" element={<Login uname={uname} unameRef={unameRef} pwordRef={pwordRef} handleLogin={handleLogin} />} />
           <Route path="/logout" element={<Logout uname={uname} handleLogout={handleLogout} />} />
           <Route path="/register" element={<Register handleRegister={handleRegister} />} />
           <Route path="/dashboard" element={<Dashboard uname={uname} />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

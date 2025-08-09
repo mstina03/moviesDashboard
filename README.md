@@ -20,3 +20,5 @@ This code is hosed on GitHub Pages: https://mstina03.github.io/moviesDashboard/#
 * The uses will click a genre to view questions/info about the selected genre
 
 
+## TODO
+* Develop question/answers section

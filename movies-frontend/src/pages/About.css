@@ -1,0 +1,45 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.about-figure {
+    margin: 0 0 20px 0;
+}
+
+.about-img {
+    width: 15rem;
+    border-style: double;
+    border-color: #888888;
+    background: white;
+    border-radius: 50%;
+}
+
+.about-caption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Limelight', cursive;
+
+}
+
+.about-text {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    color: black;
+}
