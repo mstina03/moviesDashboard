@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 const Logout = ({ uname, handleLogout }) => {
     const navigate = useNavigate();
 
-    console.log(`LOGIN: uname=${uname}`)
+    console.log(`LOGOUT: uname=${uname}`)
     
     useEffect(() => {
         if (!uname) {
-            console.log(`LOGIN: navigate( '/login')`);
+            console.log(`LOGOUT: navigate( '/login')`);
             navigate('/login'); // <-- redirect
         }
     }, [uname, navigate]);

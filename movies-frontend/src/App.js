@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import { useState, useRef } from "react";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -74,11 +73,8 @@ export default function App() {
       });
   };
 
-  const navigate = useNavigate();
-
   const handleLogout = () => {
     setUname('');
-    navigate('/login'); // go to login page after logout
   };
 
   return (
